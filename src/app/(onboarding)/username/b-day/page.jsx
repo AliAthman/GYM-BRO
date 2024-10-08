@@ -3,12 +3,12 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 export default function Bday() {
-  const [progress, setProgress] = useState(33); // Example: 33% for the current step
+  const [progress, setProgress] = useState(40); // Example: 33% for the current step
   return (
     <div className="flex flex-col bg-white ">
       {/* PROGRESS BAR */}
       <div className="relative">
-        <div className="w-full bg-gray-200 rounded-full h-2.5">
+        <div className="w-full bg-gray-200 rounded-full h-3 ring-1 mt-2 ring-gray-600">
           <div
             className="bg-pink-600 h-2.5 rounded-full"
             style={{ width: `${progress}%` }}

@@ -68,7 +68,7 @@ const users = [
   {
     "id": "user3",
     "name": "Charlie Brown",
-    "image": "/temporary/users/user3.jpg",
+    "image": "/temporary/users/user3.png",
     "interests": ["calisthenics", "social interaction", "yoga"],
     "age": 45,
     "gym": {

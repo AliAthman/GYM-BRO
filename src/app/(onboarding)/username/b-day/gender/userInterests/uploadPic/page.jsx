@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 export default function Interests() {
-  const [progress, setProgress] = useState(85);
+  const [progress, setProgress] = useState(98);
   const [selectedOptions, setSelectedOptions] = useState([]);
   const totalOptions = 3; //TOTAL NUMBER OF OPTIONS REQUIRED
   const options = [];
@@ -25,7 +25,7 @@ export default function Interests() {
       <div className="fixed top-0 left-0 right-0 bg-white z-10 shadow-md ">
         {/* PROGRESS BAR */}
         <div className="relative">
-          <div className="w-full bg-gray-200 rounded-full h-0">
+          <div className="w-full bg-gray-200 ring-1 ring-gray-600 rounded-full h-3">
             <div
               className="bg-pink-600 h-2.5 rounded-full"
               style={{ width: `${progress}%` }}

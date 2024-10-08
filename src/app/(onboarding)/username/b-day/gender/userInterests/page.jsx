@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 export default function Interests() {
-  const [progress, setProgress] = useState(55);
+  const [progress, setProgress] = useState(80);
   const [selectedOptions, setSelectedOptions] = useState([]);
   const totalOptions = 3; //TOTAL NUMBER OF OPTIONS REQUIRED
   const options = [
@@ -35,7 +35,7 @@ export default function Interests() {
       <div className="fixed top-0 left-0 right-0 bg-white z-10 shadow-md ">
         {/* PROGRESS BAR */}
         <div className="relative">
-          <div className="w-full bg-gray-200 rounded-full h-0">
+          <div className="w-full bg-gray-200 mt-2 rounded-full ring-1 ring-gray-600 h-3">
             <div
               className="bg-pink-600 h-2.5 rounded-full"
               style={{ width: `${progress}%` }}
@@ -64,11 +64,11 @@ export default function Interests() {
         </div>
       </div>
       {/* INTERESTS OPTIONS */}
-      <div className="flex-1 overflow-auto pt-24 pb-16 ">
-        <section className="flex flex-col gap-4 p-3 ">
+      <div className="flex-1 overflow-auto  pt-24 pb-16 ">
+        <section className="grid grid-cols-1 gap-4 p-3 md:grid-cols-3 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-20 md:gap-y-10 md:mt-6 mt-6 mb-3 md:mb-5">
           {options.map((option) => (
             <button
-              className={`ring-2 px-3 py-1 text-center rounded-full text-xl ${
+              className={`ring-2 w-full h-16 flex items-center justify-center text-center rounded-full text-xl ${
                 selectedOptions.includes(option)
                   ? "bg-pink-500 text-white"
                   : "text-gray-600 ring-gray-400"
@@ -87,17 +87,17 @@ export default function Interests() {
           <div></div>
         </div>
         <div className="ring-1 ring-white bg-pink-600 rounded-full p-1 mx-5  text-center justify-center">
-            <Link href="/username/b-day/gender/userInterests/uploadPic">
-          <button
-            className={`w-full py-2 rounded-full text-white font-bold text-2xl ${
-              selectedOptions.length === totalOptions
-                ? "bg-pink-600"
-                : "bg-gray-400"
-            }`}
-            disabled={selectedOptions.length !== totalOptions}
-          >
-            Next ({selectedOptions.length}/{totalOptions})
-          </button>
+          <Link href="/username/b-day/gender/userInterests/uploadPic">
+            <button
+              className={`w-full py-2 rounded-full text-white font-bold text-2xl ${
+                selectedOptions.length === totalOptions
+                  ? "bg-pink-600"
+                  : "bg-gray-400"
+              }`}
+              disabled={selectedOptions.length !== totalOptions}
+            >
+              Next ({selectedOptions.length}/{totalOptions})
+            </button>
           </Link>
         </div>
       </div>

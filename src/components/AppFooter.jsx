@@ -41,7 +41,7 @@ export default function AppFooter() {
         </Link>
       </div>
       <div>
-        <Link href="//">
+        <Link href="/chat">
           <Image src="/chat2.png" width={30} height={30} alt="Chat" />
         </Link>
       </div>

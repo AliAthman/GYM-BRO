@@ -57,8 +57,8 @@ export default function LocationPage() {
     <div className="flex flex-col h-screen text-cyan-50 bg-gray-200 overflow-hidden">
       <LogoNav />
       {/* BIG center CONTAINER */}
-      <div className="flex-1 flex flex-col justify-center items-center">
-        <div className="w-full h-[530px] relative">
+      <div className="flex-1 flex flex-col justify-center bg-black items-center">
+        <div className="w-full h-[510px] xl:h-[734px] md: relative">
           {usersinThatLocation.length > 0 ? (
             <div
               className="flex flex-col items-center -mt-3 justify-end w-full h-full bg-cover bg-center bg-no-repeat relative"
@@ -75,7 +75,7 @@ export default function LocationPage() {
                 </p>
                 <p className="mt-2">
                   <span className="text-blue-800 font-bold text-2xl">
-                    Interests:{" "}
+                    Interests:
                   </span>
                   <span className="text-bold text-xl">
                     {usersinThatLocation[currentUserIndex].interests.join(", ")}

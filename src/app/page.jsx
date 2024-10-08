@@ -52,7 +52,7 @@ export default function Home() {
               </div>
               <h2 className="text-blue-600 font-semibold py-4 flex items-center text-center">
                 <Image src="/lens.png" width={24} height={24} />
-                <Link href="/" className="ml-2">
+                <Link href="/homepage" className="ml-2">
                   Find a gym near you
                 </Link>
               </h2>
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
               <h2 className="text-blue-600 font-semibold py-4 flex items-center text-center">
                 <Image src="/lens.png" width={24} height={24} />
-                <Link href="/" className="ml-2 cursor-pointer">
+                <Link href="/homepage" className="ml-2 cursor-pointer">
                   Find a gym partner near you
                 </Link>
               </h2>
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
               <h2 className="text-blue-600 font-semibold py-4 flex items-center text-center">
                 <Image src="/chat.png" width={24} height={24} />
-                <Link href="/" className="ml-2 cursor-pointer">
+                <Link href="/chat" className="ml-2 cursor-pointer">
                   Chat with your gym partner
                 </Link>
               </h2>
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
               <h2 className="text-blue-600 font-semibold py-4 flex items-center text-center">
                 <Image src="/lens.png" width={24} height={24} alt="lens" />
-                <Link href="/" className="ml-2 cursor-pointer">
+                <Link href="/homepage" className="ml-2 cursor-pointer">
                   Find a gym trainer nearby
                 </Link>
               </h2>

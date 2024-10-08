@@ -5,13 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function UserName() {
-    const [progress, setProgress] = useState(22); // Example: 33% for the current step
+    const [progress, setProgress] = useState(20); // Example: 33% for the current step
 
     return (
-        <div className="flex flex-col p-4 gap-8">
+        <div className="flex flex-col px-4 gap-8">
             {/* PROGRESS BAR */}
-            <div className="relative">
-                <div className="w-full bg-gray-200 rounded-full h-2.5">
+            <div className="relative -mx-4">
+                <div className="w-full bg-gray-200 rounded-full mt-2 h-3 ring-1 ring-gray-600">
                     <div
                         className="bg-pink-600 h-2.5 rounded-full"
                         style={{ width: `${progress}%` }}
