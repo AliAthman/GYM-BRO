@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-export default function userNumber() {
+export default function UserNumber() {
   const [countryCode, setCountryCode] = useState("+254");
   const handleCountryChange = (e) => {
     const selectedCountry = e.target.value;
@@ -80,7 +80,7 @@ export default function userNumber() {
         data rates ma apply.
         <a href="/" className="text-blue-500 font-semibold underline">
           What happens if your number changes?
-        </a>{" "}
+        </a>
       </p>
       <Link
         href="/signup/userNumber/codesent"
